@@ -26,16 +26,27 @@ video {
 
 .reel-header {
 	position: absolute;
+	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	top: 0;
 	left: 0;
 	right: 0;
-
-	/* Inserisci qui sotto 
-	le tue regole, se necessario. */
+	padding: 10px;
+	color: #fff;
+    
 }
-
+.header-menu{
+	display: flex;
+	gap: 20px;
+}
+.header-menu span {
+	opacity: 0.7;
+}
+.header-menu.active{
+	opacity: 1;
+	font-weight: 700;
+}
 /* Footer */
 
 footer {
