@@ -7,6 +7,7 @@
 body {
 	margin: 0 auto;
 	font-family: 'TikTok Sans', sans-serif;
+	background: #f3f3f3;
 }
 
 video {
@@ -144,11 +145,70 @@ color: #fff;
 	font-weight: bold;
 }
 
+.reel-footer{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+	right: 0;
+    
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	height: 58px;
+	padding: 8px 0;
+    
+	background: #000;
+	color: #fff;
+	z-index: 10;
+}
+
+.footer-item{
+	color: #fff;
+	text-decoration: none;
+	color: inherit;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2px;
+	font-size: 10px;
+	opacity: 0.85;
+}
+
+.footer-item.active{
+	opacity: 1;
+}
+
+.footer-item i{
+	font-size: 22px;
+}
+
+.video-info{
+  position: absolute;
+  bottom: 70px;
+  left: 12px;
+  right: 100px;
+  color: white;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.video-user{
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.video-description span{
+  font-weight: 700;
+}
 
 /* ---------------------
 Regole per evidenziare i blocchi 
 da rimuovere una volta concluso
 --------------------- */
+
+/*
 .debug footer {
 	min-height: 100px;
 	border: 2px dashed #fff;
