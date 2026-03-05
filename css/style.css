@@ -32,10 +32,31 @@ video {
 	top: 0;
 	left: 0;
 	right: 0;
-	padding: 10px;
+
+	padding: 16px 18px;
+	height: 70px;
 	color: #fff;
-    
+	z-index: 10;
 }
+
+.header-menu .active{
+	position: relative;
+	font-weight: 700;
+	opacity: 1;
+}
+
+.header-menu .active::after{
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -10px;
+	width: 26px;
+	height: 3px;
+	background: #fff;
+	border-radius: 999px;
+}
+
 .header-menu{
 	display: flex;
 	gap: 20px;
